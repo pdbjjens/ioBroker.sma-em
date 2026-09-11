@@ -38,7 +38,9 @@ let cfg_rtMmed = 'median';
 
 class SmaEm extends utils.Adapter {
     /**
-     * @param {Partial<ioBroker.AdapterOptions>} [options={}]
+     * Create the adapter instance.
+     *
+     * @param {Partial<ioBroker.AdapterOptions>} [options] Adapter configuration options.
      */
     constructor(options) {
         // @ts-expect-error because otherwise it does not work
@@ -1056,7 +1058,6 @@ class SmaEm extends utils.Adapter {
             }
 
             return true;
-            // eslint-disable-next-line no-else-return
         } else {
             return false;
         }
@@ -1065,7 +1066,7 @@ class SmaEm extends utils.Adapter {
     /**
      * Is called when adapter shuts down - callback has to be called under any circumstances!
      *
-     * @param {() => void} callback
+     * @param {() => void} callback Called after the adapter has cleaned up resources and must be invoked.
      */
     onUnload(callback) {
         try {
@@ -1394,7 +1395,7 @@ class SmaEm extends utils.Adapter {
 if (module.parent) {
     // Export the constructor in compact mode
     /**
-     * @param {Partial<ioBroker.AdapterOptions>} [options={}]
+     * @param {Partial<ioBroker.AdapterOptions>} [options] Adapter options passed to the constructor.
      */
     module.exports = options => new SmaEm(options);
 } else {
