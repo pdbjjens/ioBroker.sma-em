@@ -10,7 +10,7 @@
 [![NPM version](http://img.shields.io/npm/v/iobroker.sma-em.svg)](https://www.npmjs.com/package/iobroker.sma-em)
 **Tests:** ![Test and Release](https://github.com/iobroker-community-adapters/iobroker.sma-em/workflows/Test%20and%20Release/badge.svg)  
 
-[![NPM](https://nodei.co/npm/iobroker.sma-em.png?downloads=true)](https://nodei.co/npm/iobroker.sma-em/)
+[![NPM](https://nodei.co/npm/iobroker.sma-em.svg?data=d,s)](https://www.npmjs.com/package/iobroker.sma-em/)
 
 ### Info
 
@@ -24,7 +24,7 @@ RELEASE NOTES:
 
 Version 1.3.x includes a Breaking Change:
 
-- node>=20, js-controller>=7.0.7 and admin>=7.6.17 required  
+- node>=20, js-controller>=7.0.7 and admin>=7.7.22 required  
   Upgrade your ioBroker to at least this software level, if you want to install this adapter.
 
 Version 1.1.x includes some Breaking Changes:
@@ -92,12 +92,25 @@ In addition to the states in non-extended mode, the following values are availab
 
 <!--
     Placeholder for the next version (at the beginning of the line):
-    ### __WORK IN PROGRESS__
+    ### **WORK IN PROGRESS**
 -->
 
 ## Changelog
+### **WORK IN PROGRESS**
+- (copilot) Adapter requires node.js >= 22 now
 
-### **WORK IN PROGRESS** - 2025H2 maintenance release
+### 1.3.1 (2026-03-03) - 2026H1 maintenance release
+
+- (copilot) Adapter requires admin >= 7.7.22 now
+- (pdbjjens) **Fixed**: update release-script (#845)
+
+### 1.3.1-alpha.0 (2025-10-21)
+
+- (pdbjjens) Fix: Add GitHub as npm Trusted Publisher
+- (pdbjjens) Change: Update dependencies
+- (pdbjjens) Change: Update npm badge
+
+### 1.3.0 (2025-08-28) - 2025H2 maintenance release
 
 - (pdbjjens) Change: node>=20, js-controller>=7.0.7 and admin>=7.6.17 required
 - (pdbjjens) Fix: Correctly identify new SMA EMETER (#795)
@@ -115,25 +128,7 @@ In addition to the states in non-extended mode, the following values are availab
 - (pdbjjens) New: Updated dependencies
 - (pdbjjens) Fix: IP family property changed from string to number in nodejs 18.0.0-18.4.0
 
-### 1.0.1 (2024-01-26) - 2024 maintenance release
-
-- (pdbjjens) Updated dependencies
-
-### 1.0.0 (2023-08-19)
-
-- (pdbjjens) Change: node>=16, js-contoller>=4 and admin>=6 required
-- (pdbjjens) Change: Configurable Energy Meters per adapter instance
-- (pdbjjens) Change: Selectable own network device IP to listen for multicast messages
-- (pdbjjens) Change: Objects "last_message" and "TimeTick" were removed
-- (pdbjjens) New: Support ioBroker discovery
-- (pdbjjens) New: Detect SMA-EM 1.0 (SUSy 270)
-- (arteck) New: Detect new SHM 2.0 with SUSy 501
-- (ticaki) Fix: Catch interface errors
-
-### 0.7.0 (2023-03-14)
-
-- (pdbjjens) New: Configurable data point update intervals to reduce system load
-- (pdbjjens) New: Use JSON config
+[Older changelogs can be found there](CHANGELOG_OLD.md)
 
 ## Legal Notices
 
@@ -147,7 +142,7 @@ The authors are in no way endorsed by or affiliated with SMA Solar Technology AG
 
 The MIT License (MIT)
 
-Copyright (c) 2025 IoBroker-Community
+Copyright (c) 2025-2026 iobroker-community-adapters <iobroker-community-adapters@gmx.de>  
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

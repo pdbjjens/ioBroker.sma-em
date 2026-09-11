@@ -1,4 +1,24 @@
 # Older changes
+## 1.0.1 (2024-01-26) - 2024 maintenance release
+
+- (pdbjjens) Updated dependencies
+
+## 1.0.0 (2023-08-19)
+
+- (pdbjjens) Change: node>=16, js-contoller>=4 and admin>=6 required
+- (pdbjjens) Change: Configurable Energy Meters per adapter instance
+- (pdbjjens) Change: Selectable own network device IP to listen for multicast messages
+- (pdbjjens) Change: Objects "last_message" and "TimeTick" were removed
+- (pdbjjens) New: Support ioBroker discovery
+- (pdbjjens) New: Detect SMA-EM 1.0 (SUSy 270)
+- (arteck) New: Detect new SHM 2.0 with SUSy 501
+- (ticaki) Fix: Catch interface errors
+
+## 0.7.0 (2023-03-14)
+
+- (pdbjjens) New: Configurable data point update intervals to reduce system load
+- (pdbjjens) New: Use JSON config
+
 ## 0.6.6 (2023-02-28)  2023 maintenance release
 
 - (pdbjjens) Updated dependencies
