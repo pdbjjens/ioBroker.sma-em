@@ -22,6 +22,11 @@ The SMA Energy Meter Adapter receives these multicast messages and stores them a
 
 RELEASE NOTES:
 
+Version 1.4.x includes a Breaking Change:
+
+- node>=22, js-controller>=7.0.7 and admin>=7.7.22 required  
+  Upgrade your ioBroker to at least this software level, if you want to install this adapter.
+
 Version 1.3.x includes a Breaking Change:
 
 - node>=20, js-controller>=7.0.7 and admin>=7.7.22 required  
@@ -96,8 +101,12 @@ In addition to the states in non-extended mode, the following values are availab
 -->
 
 ## Changelog
-### **WORK IN PROGRESS**
+
+### **WORK IN PROGRESS** - 2026H2 maintenance release
+
 - (copilot) Adapter requires node.js >= 22 now
+- (pdbjjens) Fixed: i18n directory migrated to short format
+- (pdbjjens) Fixed: dependency updates and minor bugfixes
 
 ### 1.3.1 (2026-03-03) - 2026H1 maintenance release
 
